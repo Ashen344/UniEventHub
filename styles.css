@@ -278,14 +278,32 @@ textarea {
 }
 
 /* FOOTER
----------------------------------------- */
-/* Footer layout and spacing */
-footer {
-  border-top: 1px solid #d3d3d3;
-  padding: 20px 0;
-  background-color: #ffffff;
+----------------------------------------
+*/
+
+footer{
+    border-top: 1px solid #d3d3d3;
+    padding: 20px 0;              
+    background-color: #ffffff;   
 }
 
+footer ul{
+    display: flex;                
+    justify-content: center;      
+    list-style: none;           
+    margin: 0;
+    padding: 0;
+    gap: 30px;                  
+}
+
+footer li{
+    font-size: 0.85em;                           
+}
+
+footer a{
+    color: #4389a2;              
+    text-decoration: underline;  
+}
 /* RESPONSIVE DESIGN
 ---------------------------------------- */
 /* Adjust layout for smaller screens */
