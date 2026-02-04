@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - UniEvent Hub</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <!-- ===== HEADER SECTION ===== -->
+      <header>
+        <div>
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="UniEvent Hub Logo">
+          </a>
+          <h1>UniEvent Hub</h1>
+        </div>
+
+        <!--Main Navigation menu-->
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <!-- aria-current indicates the active page -->
+            <li><a href="register.html" aria-current="page">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ===== MAIN CONTENT AREA ===== -->
+      <main>
+        <!-- Page heading and brief instructions -->
+        <section>
+          <h2>Activity Registration</h2>
+          <p>Please fill in your details to secure your spot.</p>
+        </section>
+
+        <!-- Panel containing the registration form -->
+        <section class="panel panel--narrow">
+          <!-- Registration form -->
+          <form class="form" action="#" method="post">
+
+            <!-- Fieldset for student personal information -->
+            <fieldset class="fieldset">
+              <legend>Student Information</legend>
+
+              <!-- Grid layout for student details -->
+              <div class="form-grid">
+
+                <!-- First name input field -->
+                <div class="field">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Jane">
+                </div>
+
+                <!-- Last name input field -->
+                <div class="field">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Doe">
+                </div>
+
+                <!-- Student ID input field -->
+                <div class="field">
+                  <label for="std-id">Student ID</label>
+                  <input type="text" id="std-id" name="student_id" placeholder="S1234567">
+                </div>
+
+                <!-- University email input field -->
+                <div class="field">
+                  <label for="email">University Email</label>
+                  <input type="email" id="email" name="email" placeholder="name@university.edu">
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Fieldset for selecting the activity to register for -->
+            <fieldset class="fieldset">
+              <legend>What are you registering for?</legend>
+
+              <!-- Dropdown menu for activity selection -->
+              <div class="field">
+                <label for="activity-select">Select Activity</label>
+                <select id="activity-select" name="activity">
+                  <option value="">-- Please Choose --</option>
+
+                  <!-- Group of sports activities -->
+                  <optgroup label="Sports">
+                    <option value="basketball">Basketball</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="badminton">Badminton</option>
+                  </optgroup>
+
+                  <!-- Group of club activities -->
+                  <optgroup label="Clubs">
+                    <option value="photography">Photography Society</option>
+                    <option value="debate">Debate Team</option>
+                    <option value="robotics-ai">Robotics &amp; AI Club</option>
+                  </optgroup>
+                </select>
+              </div>
+            </fieldset>
+
+            <!-- Submit button for form submission -->
+            <button type="submit">Register</button>
+
+            <!-- Informational note for users after submission -->
+            <p class="note">
+              <em>Note: You will receive a confirmation email within 24 hours.</em>
+            </p>
+          </form>
+        </section>
+      </main>
+
+      <!-- ===== FOOTER SECTION ===== -->
+      <footer>
+		<ul>
+			<li>&copy; 2026 UniEvent Hub. All rights reserved.</li>
+			<li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li>Contact us at: <a href="mailto:unieventhub@unievent.com">unieventhub@unievent.com</a></li>
+			<li>Find us at: 2 Royal St, Colombo, Sri Lanka</li>	
+		</ul>
+	</footer>
+    </div>
+  </body>
+</html>

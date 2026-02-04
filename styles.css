@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+/* GLOBAL STYLES
+---------------------------------------- */
+/* Apply consistent box sizing across all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Base styling for the entire page */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0b1f26;
+  background: #e8f1f2;
+  line-height: 1.6;
+}
+
+/* Ensure images scale responsively */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Default link styling */
+a {
+  color: #0f4c5c;
+  text-decoration: none;
+}
+
+/* Visited link styling */
+a:visited {
+  color: #c62d03;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main page wrapper to center content */
+#wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER + NAVIGATION
+---------------------------------------- */
+/* Layout header using flexbox */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 22px;
+  background: linear-gradient(90deg, #0f4c5c, #1f7a8c);
+  color: #ffffff;
+}
+
+/* Align logo and site title */
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Logo sizing and rounding */
+header > div a img {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+}
+
+/* Site title styling */
+header h1 {
+  margin: 0;
+  font-size: 1.35em;
+  font-weight: 700;
+}
+
+/* Navigation list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Navigation links */
+nav a {
+  display: block;
+  color: #ffffff;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+/* Keep visited nav links white */
+nav a:visited {
+  color: #ffffff;
+}
+
+/* Hover effect for navigation */
+nav a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  text-decoration: none;
+}
+
+/* Highlight active page using aria-current */
+nav a[aria-current="page"] {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* MAIN CONTENT LAYOUT
+---------------------------------------- */
+/* Padding around main content */
+main {
+  padding: 26px 22px 40px 22px;
+}
+
+/* Spacing for page headings */
+main > section:first-child {
+  margin-bottom: 18px;
+}
+
+/* Main section heading styling */
+main > section:first-child h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+/* Spacing between sections */
+main > section + section {
+  margin-top: 26px;
+}
+
+/* Muted text for small elements */
+small {
+  color: rgba(11, 31, 38, 0.75);
+}
+
+/* HERO SECTION (HOME PAGE)
+---------------------------------------- */
+/* Two-column hero layout */
+#hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 18px;
+  border-radius: 18px;
+  background: #f3f4f6;
+}
+
+/* Hero heading styling */
+#hero h2 {
+  margin: 0 0 8px 0;
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+/* Rounded hero image */
+#hero img {
+  border-radius: 18px;
+}
+
+/* Container for call-to-action buttons */
+#easyaccess {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* BUTTONS
+---------------------------------------- */
+/* Shared button styling for links and buttons */
+a[role="button"],
+button {
+  display: inline-block;
+  background: #0f4c5c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Hover state for buttons */
+a[role="button"]:hover,
+button:hover {
+  background: #1f7a8c;
+  text-decoration: none;
+}
+
+/* Ghost button variation */
+a[role="button"][data-variant="ghost"] {
+  background: transparent;
+  border: 1px solid rgba(15, 76, 92, 0.35);
+  color: #0f4c5c;
+}
+
+/* Small button size */
+a[role="button"][data-size="small"] {
+  padding: 9px 12px;
+  border-radius: 12px;
+}
+
+/* CARD LAYOUT
+---------------------------------------- */
+/* Grid layout for cards */
+section[data-layout="cards"] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Individual card styling */
+section[data-layout="cards"] article {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Card image styling */
+section[data-layout="cards"] article img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Allows card content to stretch for button alignment */
+section[data-layout="cards"] article > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Push buttons to the bottom of cards */
+section[data-layout="cards"] article a[role="button"] {
+  margin-top: auto;
+}
+
+/* TWO COLUMN SECTIONS
+---------------------------------------- */
+/* Two-column layout used on calendar and contact pages */
+section[data-layout="two-col"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* FORM STYLES
+---------------------------------------- */
+/* Base form input styling */
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 31, 38, 0.22);
+}
+
+/* FOOTER
+---------------------------------------- */
+/* Footer layout and spacing */
+footer {
+  border-top: 1px solid #d3d3d3;
+  padding: 20px 0;
+  background-color: #ffffff;
+}
+
+/* RESPONSIVE DESIGN
+---------------------------------------- */
+/* Adjust layout for smaller screens */
+@media (max-width: 900px) {
+  #hero {
+    grid-template-columns: 1fr;
+  }
+
+  section[data-layout="cards"],
+  section[data-layout="two-col"] {
+    grid-template-columns: 1fr;
+  }
+}

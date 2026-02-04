@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs - UniEvent Hub</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Wrapper to contain and center all page content -->
+    <div id="wrapper">
+
+      <!-- ===== HEADER SECTION ===== -->
+      <header>
+        <div>
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="UniEvent Hub Logo">
+          </a>
+          <h1>UniEvent Hub</h1>
+        </div>
+
+        <!--Main Navigation menu-->
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <!-- aria-current indicates the active page -->
+            <li><a href="clubs.html" aria-current="page">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ===== MAIN CONTENT AREA ===== -->
+      <main>
+        <!-- Intro section describing the purpose of the Clubs page -->
+        <section>
+          <h2>Explore Our Clubs</h2>
+          <p>Join a community that shares your passion. Browse active clubs below.</p>
+        </section>
+
+        <!-- Card layout section displaying available clubs -->
+        <section data-layout="cards">
+
+          <!-- Card 1: Photography Society -->
+          <article>
+            
+            <img src="images/club-photo.jpg" alt="Students taking photos outside">
+            <!-- Club details and registration action -->
+            <div>
+              <h3>Photography Society</h3>
+              <p><small><strong>Focus:</strong> Arts &amp; Media</small></p>
+              <p>
+                We explore digital and film photography. Weekly photo walks and editing
+                workshops are available for all skill levels.
+              </p>
+              <!-- Register button for the club -->
+              <a role="button" data-size="small" href="register.html">Register</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Debate Team -->
+          <article>
+            <img src="images/club-debate.jpg" alt="Students debating at a podium" >
+            <div>
+              <h3>University Debate Team</h3>
+              <p><strong>Focus:</strong> Academic &amp; Public Speaking</p>
+              <p>
+                Sharpen your critical thinking and speaking skills. We compete in national
+                inter-varsity championships.
+              </p>
+              <a role="button" data-size="small" href="register.html">Register</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Robotics and AI Club -->
+          <article>
+            <img src="images/club-ai.jpg" alt="Students building a robot" >
+            <div>
+              <h3>Robotics &amp; AI Club</h3>
+              <p><strong>Focus:</strong> Technology &amp; Engineering</p>
+              <p>
+                Build the future with us. We work on Arduino projects, drone programming,
+                and AI competitions.
+              </p>
+              <a role="button" data-size="small" href="register.html">Register</a>
+            </div>
+          </article>
+
+        </section>
+      </main>
+
+      <!-- ===== FOOTER SECTION ===== -->
+      <footer>
+		<ul>
+			<li>&copy; 2026 UniEvent Hub. All rights reserved.</li>
+			<li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li>Contact us at: <a href="mailto:unieventhub@unievent.com">unieventhub@unievent.com</a></li>
+			<li>Find us at: 2 Royal St, Colombo, Sri Lanka</li>	
+		</ul>
+	 </footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - UniEvent Hub</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Wrapper to contain and center all page content -->
+    <div id="wrapper">
+
+      <!-- ===== HEADER SECTION ===== -->
+      <header>
+        <!-- Website logo and site name linking back to the home page -->
+        <div>
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="UniEvent Hub Logo">
+          </a>
+          <h1>UniEvent Hub</h1>
+        </div>
+
+        <!--Main Navigation menu-->
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- ===== MAIN CONTENT AREA ===== -->
+      <main>
+
+        <!-- Page heading and short introduction -->
+        <section>
+          <h2>Contact Us</h2>
+          <p>Say something to start a live chat!</p>
+        </section>
+
+        <!-- Two-column layout for contact details and contact form -->
+        <section class="two-column">
+
+          <!-- Left panel displaying contact information -->
+          <div class="panel">
+            <h3>Contact Information</h3>
+
+            <!-- List of contact details -->
+            <ul class="list">
+              <li><strong>Phone:</strong> +012 3456 789</li>
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:unieventhub@unievent.com">unieventhub@unievent.com</a>
+              </li>
+              <li>
+                <strong>Find out more:</strong>
+                <!-- External link opening in a new tab -->
+                <a href="https://www.ecu.edu.au" target="_blank" rel="noreferrer">
+                  www.ecu.edu.au
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right panel containing the contact form -->
+          <div class="panel">
+            <!-- Contact form for user messages -->
+            <form class="form" action="#" method="post">
+              <h3>Send us a Message</h3>
+
+              <!-- Grid layout for basic user information fields -->
+              <div class="form-grid">
+
+                <!-- First name input field -->
+                <div class="field">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John">
+                </div>
+
+                <!-- Last name input field -->
+                <div class="field">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Doe">
+                </div>
+
+                <!-- Email input field -->
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="demo@gmail.com">
+                </div>
+
+                <!-- Phone number input field -->
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+012 3456 789">
+                </div>
+              </div>
+
+              <!-- Radio button group for selecting message subject -->
+              <fieldset class="fieldset">
+                <legend>Select Subject</legend>
+
+                <label class="radio">
+                  <input type="radio" name="subject" value="general">
+                  <span>General Inquiry</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="subject" value="support">
+                  <span>Tech Support</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="subject" value="feedback">
+                  <span>Feedback</span>
+                </label>
+
+                <label class="radio">
+                  <input type="radio" name="subject" value="other">
+                  <span>Other</span>
+                </label>
+              </fieldset>
+
+              <!-- Message text area -->
+              <div class="field">
+                <label for="msg">Message</label>
+                <textarea
+                  id="msg"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                ></textarea>
+              </div>
+
+              <!-- Submit button for the form -->
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+
+      <!-- ===== FOOTER SECTION ===== -->
+      <footer>
+		<ul>
+			<li>&copy; 2026 UniEvent Hub. All rights reserved.</li>
+			<li><a href="#">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+			<li>Contact us at: <a href="mailto:unieventhub@unievent.com">unieventhub@unievent.com</a></li>
+			<li>Find us at: 2 Royal St, Colombo, Sri Lanka</li>	
+		</ul>
+	 </footer>
+
+    </div>
+  </body>
+</html>
